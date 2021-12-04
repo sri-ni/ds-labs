@@ -24,7 +24,7 @@ const Home: NextPage = () => {
         </p>
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
+          <a href="/roadmap" className={styles.card}>
             <h2>Roadmap &rarr;</h2>
             <p>Find out what&#39;s ahead.</p>
           </a>
