@@ -33,10 +33,17 @@ const Home: NextPage = () => {
             </a>
           </Link>
   
-          <Link href="/roadmap">
+          <Link href="/process">
             <a className={styles.card}>
               <h2>Process &rarr;</h2>
               <p>Learn about how we run.</p>
+            </a>
+          </Link>
+  
+          <Link href="/community">
+            <a className={styles.card}>
+              <h2>Community &rarr;</h2>
+              <p>Find out how we engage.</p>
             </a>
           </Link>
   
@@ -46,34 +53,7 @@ const Home: NextPage = () => {
               <p>Get to know us.</p>
             </a>
           </Link>
-
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Boilerplate example projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Deploy with Vercel.
-            </p>
-          </a>
+          
         </div>
       </main>
 
