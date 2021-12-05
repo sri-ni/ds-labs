@@ -1,4 +1,5 @@
 import type { NextPage } from 'next'
+import Link from 'next/link';
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
@@ -24,24 +25,36 @@ const Home: NextPage = () => {
         </p>
 
         <div className={styles.grid}>
-          <a href="/roadmap" className={styles.card}>
-            <h2>Roadmap &rarr;</h2>
-            <p>Find out what&#39;s ahead.</p>
-          </a>
-
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Process &rarr;</h2>
-            <p>Learn about our processes, on how we run, as well as engage with our community.</p>
-          </a>
+  
+          <Link href="/roadmap">
+            <a className={styles.card}>
+              <h2>Roadmap &rarr;</h2>
+              <p>Find out what&#39;s ahead.</p>
+            </a>
+          </Link>
+  
+          <Link href="/roadmap">
+            <a className={styles.card}>
+              <h2>Process &rarr;</h2>
+              <p>Learn about how we run.</p>
+            </a>
+          </Link>
+  
+          <Link href="/team">
+            <a className={styles.card}>
+              <h2>Team &rarr;</h2>
+              <p>Get to know us.</p>
+            </a>
+          </Link>
 
           <a href="https://nextjs.org/docs" className={styles.card}>
             <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
+            <p>Features and API.</p>
           </a>
 
           <a href="https://nextjs.org/learn" className={styles.card}>
             <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
+            <p>Interactive course with quizzes!</p>
           </a>
 
           <a
@@ -49,7 +62,7 @@ const Home: NextPage = () => {
             className={styles.card}
           >
             <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
+            <p>Boilerplate example projects.</p>
           </a>
 
           <a
@@ -58,7 +71,7 @@ const Home: NextPage = () => {
           >
             <h2>Deploy &rarr;</h2>
             <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
+              Deploy with Vercel.
             </p>
           </a>
         </div>
