@@ -26,6 +26,13 @@ const Home: NextPage = () => {
 
         <div className={styles.grid}>
   
+          <Link href="/guides">
+            <a className={styles.card}>
+              <h2>Guides &rarr;</h2>
+              <p>Self-paced learning.</p>
+            </a>
+          </Link>
+  
           <Link href="/roadmap">
             <a className={styles.card}>
               <h2>Roadmap &rarr;</h2>
